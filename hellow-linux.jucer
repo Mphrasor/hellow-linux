@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="CW6wXt" name="hellow-linux" projectType="guiapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="B6peZf" name="hellow-linux">
+    <GROUP id="{2A7B24D6-784B-FCD9-9913-EA3349C30611}" name="Source">
+      <FILE id="ivehOq" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="vIUaNa" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="u3YZL1" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="hellow-linux"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="hellow-linux"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JuceModules/JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="hellow-linux"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="hellow-linux"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../JuceModules/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../JuceModules/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
